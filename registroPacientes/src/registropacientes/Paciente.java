@@ -3,20 +3,21 @@ package registropacientes;
 public class Paciente {
 
     String nombre;
-    String documento;
+    int documento;
     int edad;
     String motivoConsulta;
     String telefonos;
-    String tipoPaciente = calcularTipoPaciente();
     String estado;
+    String tipoPaciente;
 
-    public Paciente(String nombre, String documento, int edad, String motivoConsulta, String telefonos) {
+    public Paciente(String nombre, int documento, int edad, String motivoConsulta, String telefonos) {
         this.nombre = nombre;
         this.documento = documento;
         this.edad = edad;
         this.motivoConsulta = motivoConsulta;
         this.telefonos = telefonos;
-        this.estado = "disponible";
+        this.estado = "registrado";
+        this.tipoPaciente = calcularTipoPaciente();
     }
 
     public void setEstado(String estado) {
@@ -27,7 +28,7 @@ public class Paciente {
         return nombre;
     }
 
-    public String getDocumento() {
+    public int getDocumento() {
         return documento;
     }
 

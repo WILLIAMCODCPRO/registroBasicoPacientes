@@ -3,10 +3,10 @@ package registropacientes;
 public class RegistroPacientes {
 
     public static void main(String[] args) {
-        int opcionUsuario = 0;
+        int opcionUsuario;
         do {
             Funciones.mostrarMenuPrincipal();
-            opcionUsuario = Funciones.pedirOpcion(opcionUsuario);
+            opcionUsuario = Funciones.pedirOpcion();
             switch (opcionUsuario) {
                 case 1:
                     Funciones.registarPaciente();
@@ -15,10 +15,10 @@ public class RegistroPacientes {
                     Funciones.mostarPacientesRegistrados();
                     break;
                 case 3:
-                    System.out.println("Funciona");
+                   Funciones.atenderPasiente();
                     break;
                 case 4:
-
+                    Funciones.borrarPasiente();
                     break;
                 case 5:
                     System.out.println("Saliendo del programa...");
