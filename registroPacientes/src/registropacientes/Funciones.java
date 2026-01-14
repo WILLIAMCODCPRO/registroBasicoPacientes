@@ -149,6 +149,7 @@ public class Funciones {
     static void borrarPasiente() {
         if (p1 == null && p2 == null && p3 == null && p4 == null) {
             System.out.println("No hay pacientes que borrar");
+            return;
         }
 
         System.out.println("¿Cual pasiente qeuieres borrar?");
@@ -198,6 +199,7 @@ public class Funciones {
     static void atenderPasiente() {
         if (p1 == null && p2 == null && p3 == null && p4 == null) {
             System.out.println("No hay pacientes que atender");
+            return;
         }
 
         System.out.println("¿Cual pasiente qeuieres atender");
