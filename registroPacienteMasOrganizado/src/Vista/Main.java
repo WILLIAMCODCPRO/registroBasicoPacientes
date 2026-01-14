@@ -3,7 +3,7 @@ import Controlador.PedirDatos;
 import Controlador.Registrar;
 import Controlador.Atender;
 import Controlador.Borrar;
-import Controlador.Mostrar;
+
 
 public class Main {
      public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Main {
                     Registrar.registrarPaciente();
                     break;
                 case 2:
-                    Mostrar.mostarPacientesRegistrados();
+                    Menu.mostarPacientesRegistrados();
                     break;
                 case 3:
                    Atender.atenderPasiente();
